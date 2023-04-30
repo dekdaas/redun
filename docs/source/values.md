@@ -55,7 +55,7 @@ file hash does not match, then the object can declare that its state assertion i
 and that we should reassert it (i.e., re-run the task to rewrite the file with the intended
 contents).
 
-See (File reactivity)[design.md#File-reactivity] for more exposition on the file case.
+See [File reactivity](design.md#File-reactivity) for more exposition on the file case.
 
 ## Extending standard types with `ProxyValue`s
 
