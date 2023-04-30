@@ -588,7 +588,7 @@ It's common to use workflow engines to implement Extract Transform Load (ETL) pi
 - With files, we were able to double check if their current state was consistent with our cache by hashing them. With a database or API, it's typically not feasible to hash a whole database. Is there something else we could do?
 - The redun cache contains cached results from all previous runs. Conveniently, that allows for fast reverting to old results if code or input data is changed back to the old state. However, for a stateful system like a database, we likely can't just re-execute arbitrary tasks in any order. Similar to database migration frameworks (South, Alembic, etc), we may need to roll back past tasks before applying new ones.
 
-redun provides solutions to several of these challenges using a concept called (Handles)[values.md#Handles-for-ephemeral-and-stateful-values].
+redun provides solutions to several of these challenges using a concept called [Handles](values.md#Handles-for-ephemeral-and-stateful-values).
 
 ### Running without a scheduler
 
